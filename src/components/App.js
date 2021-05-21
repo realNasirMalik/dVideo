@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DVideo from '../abis/DVideo.json'
+import DVideo from '../abis/dVideo.json'
 import Navbar from './Navbar'
 import Main from './Main'
 import Web3 from 'web3';
@@ -46,7 +46,7 @@ class App extends Component {
       //Iterate throught videos and add them to the state (by newest)
 
 
-      //Set latest video and it's title to view as default 
+      //Set latest video and it's title to view as default
       //Set loading state to false
 
       //If network data doesn't exisits, log error
@@ -80,7 +80,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar 
+        <Navbar
           //Account
         />
         { this.state.loading

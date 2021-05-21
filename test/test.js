@@ -1,14 +1,14 @@
-const DVideo = artifacts.require('./DVideo.sol')
+const dVideo = artifacts.require('./dVideo.sol')
 
 require('chai')
   .use(require('chai-as-promised'))
   .should()
 
-contract('DVideo', ([deployer, author]) => {
+contract('dVideo', ([deployer, author]) => {
   let dvideo
 
   before(async () => {
-    dvideo = await DVideo.deployed()
+    dvideo = await dVideo.deployed()
   })
 
   describe('deployment', async () => {
@@ -22,7 +22,7 @@ contract('DVideo', ([deployer, author]) => {
 
     it('has a name', async () => {
       const name = await dvideo.name()
-      assert.equal(name, 'DVideo')
+      assert.equal(name, 'dVideo')
     })
   })
 
@@ -37,7 +37,8 @@ contract('DVideo', ([deployer, author]) => {
 
     //check event
     it('creates videos', async () => {
-      // SUCESS
+         
+      // SUCCESS
       assert.equal(videoCount, 1)
       const event = result.logs[0].args
       assert.equal(event.id.toNumber(), videoCount.toNumber(), 'id is correct')

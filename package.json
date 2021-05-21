@@ -1,9 +1,9 @@
 {
-  "name": "DVideo",
+  "name": "dvideo",
   "version": "0.1.0",
   "description": "Decentralized platform for video publishing",
   "author": "Dapp University",
-  "homepage": ".",
+  "homepage": "http://.",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.1.0",
     "babel-polyfill": "6.26.0",
@@ -46,5 +46,17 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.2.0"
+  },
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realNasirMalik/dVideo.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realNasirMalik/dVideo/issues"
   }
 }

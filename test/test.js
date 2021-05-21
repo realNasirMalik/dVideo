@@ -37,7 +37,7 @@ contract('dVideo', ([deployer, author]) => {
 
     //check event
     it('creates videos', async () => {
-         
+
       // SUCCESS
       assert.equal(videoCount, 1)
       const event = result.logs[0].args
